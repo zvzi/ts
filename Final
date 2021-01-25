@@ -1,25 +1,32 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local OpenTSKit = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
 local fov = Instance.new("TextButton")
 local resetkey = Instance.new("TextButton")
 local CloseButton = Instance.new("TextButton")
-local fov_2 = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
+local svh = Instance.new("TextButton")
+local RedeemCodeOpen = Instance.new("TextButton")
 local Roundify = Instance.new("ImageLabel")
+
+--Properties:
 
 OpenTSKit.Name = "OpenTSKit"
 OpenTSKit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-OpenTSKit.ResetOnSpawn = false
 
-Frame.Parent = OpenTSKit
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BackgroundTransparency = 0.500
-Frame.Position = UDim2.new(0.180347294, 0, 0.299442053, 0)
-Frame.Size = UDim2.new(0, 681, 0, 386)
-Frame.Visible = false
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = OpenTSKit
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BackgroundTransparency = 0.500
+MainFrame.Position = UDim2.new(0.190511525, 0, 0.224352643, 0)
+MainFrame.Size = UDim2.new(0, 761, 0, 420)
+MainFrame.Visible = false
 
 fov.Name = "fov"
-fov.Parent = Frame
+fov.Parent = MainFrame
 fov.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
 fov.BackgroundTransparency = 0.900
 fov.BorderSizePixel = 0
@@ -27,13 +34,13 @@ fov.Position = UDim2.new(0.0749014467, 0, 0.211904764, 0)
 fov.Size = UDim2.new(0, 186, 0, 39)
 fov.Font = Enum.Font.GothamBlack
 fov.Text = "Change FOV to 120"
-fov.TextColor3 = Color3.fromRGB(255, 216, 217)
+fov.TextColor3 = Color3.fromRGB(0, 0, 0)
 fov.TextScaled = true
 fov.TextSize = 30.000
 fov.TextWrapped = true
 
 resetkey.Name = "reset key"
-resetkey.Parent = Frame
+resetkey.Parent = MainFrame
 resetkey.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
 resetkey.BackgroundTransparency = 0.900
 resetkey.BorderSizePixel = 0
@@ -41,13 +48,13 @@ resetkey.Position = UDim2.new(0.421813428, 0, 0.20714286, 0)
 resetkey.Size = UDim2.new(0, 186, 0, 39)
 resetkey.Font = Enum.Font.GothamBlack
 resetkey.Text = "Reset Key (X)"
-resetkey.TextColor3 = Color3.fromRGB(255, 217, 218)
+resetkey.TextColor3 = Color3.fromRGB(0, 0, 0)
 resetkey.TextScaled = true
 resetkey.TextSize = 30.000
 resetkey.TextWrapped = true
 
 CloseButton.Name = "CloseButton"
-CloseButton.Parent = Frame
+CloseButton.Parent = MainFrame
 CloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 CloseButton.Position = UDim2.new(0.889198124, 0, -0.0016420274, 0)
 CloseButton.Size = UDim2.new(0, 63, 0, 46)
@@ -57,40 +64,41 @@ CloseButton.TextScaled = true
 CloseButton.TextSize = 32.000
 CloseButton.TextWrapped = true
 
-fov_2.Name = "fov"
-fov_2.Parent = Frame
-fov_2.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
-fov_2.BackgroundTransparency = 0.900
-fov_2.BorderSizePixel = 0
-fov_2.Position = UDim2.new(0.261391908, 0, 0.52537626, 0)
-fov_2.Size = UDim2.new(0, 186, 0, 39)
-fov_2.Font = Enum.Font.GothamBlack
-fov_2.Text = "Server Hop"
-fov_2.TextColor3 = Color3.fromRGB(255, 216, 217)
-fov_2.TextScaled = true
-fov_2.TextSize = 30.000
-fov_2.TextWrapped = true
+svh.Name = "svh"
+svh.Parent = MainFrame
+svh.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
+svh.BackgroundTransparency = 0.900
+svh.BorderSizePixel = 0
+svh.Position = UDim2.new(0.0749014467, 0, 0.211904764, 0)
+svh.Size = UDim2.new(0, 186, 0, 39)
+svh.Font = Enum.Font.GothamBlack
+svh.Text = "ServerHop"
+svh.TextColor3 = Color3.fromRGB(0, 0, 0)
+svh.TextScaled = true
+svh.TextSize = 30.000
+svh.TextWrapped = true
 
-TextButton.Parent = OpenTSKit
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0203752201, 0, 0.4526214, 0)
-TextButton.Size = UDim2.new(0, 143, 0, 37)
-TextButton.ZIndex = 5
-TextButton.Font = Enum.Font.GothamBlack
-TextButton.Text = "Open TS Kit"
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+RedeemCodeOpen.Name = "RedeemCodeOpen"
+RedeemCodeOpen.Parent = OpenTSKit
+RedeemCodeOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedeemCodeOpen.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RedeemCodeOpen.BorderSizePixel = 0
+RedeemCodeOpen.Position = UDim2.new(0.0203752201, 0, 0.451429516, 0)
+RedeemCodeOpen.Size = UDim2.new(0, 149, 0, 38)
+RedeemCodeOpen.ZIndex = 5
+RedeemCodeOpen.Font = Enum.Font.GothamBlack
+RedeemCodeOpen.Text = "Open TS Kit"
+RedeemCodeOpen.TextScaled = true
+RedeemCodeOpen.TextSize = 14.000
+RedeemCodeOpen.TextWrapped = true
 
 Roundify.Name = "Roundify"
-Roundify.Parent = TextButton
+Roundify.Parent = RedeemCodeOpen
 Roundify.AnchorPoint = Vector2.new(0.5, 0.5)
 Roundify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Roundify.BackgroundTransparency = 1.000
-Roundify.Position = UDim2.new(0.510489583, 0, 0.5, 0)
-Roundify.Size = UDim2.new(1.1328671, 14, 0.621621609, 14)
+Roundify.Position = UDim2.new(0.506570697, 0, 0.497510403, 0)
+Roundify.Size = UDim2.new(1.12502944, 14, 0.626599967, 14)
 Roundify.Image = "rbxassetid://3570695787"
 Roundify.ScaleType = Enum.ScaleType.Slice
 Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -98,7 +106,7 @@ Roundify.SliceScale = 0.583
 
 -- Scripts:
 
-local function VLVZTJB_fake_script() -- fov.LocalScript 
+local function GPRI_fake_script() -- fov.LocalScript 
 	local script = Instance.new('LocalScript', fov)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -106,8 +114,8 @@ local function VLVZTJB_fake_script() -- fov.LocalScript
 		game.Workspace.CurrentCamera.FieldOfView  = 100
 	end)
 end
-coroutine.wrap(VLVZTJB_fake_script)()
-local function NCPUF_fake_script() -- resetkey.LocalScript 
+coroutine.wrap(GPRI_fake_script)()
+local function CWTJT_fake_script() -- resetkey.LocalScript 
 	local script = Instance.new('LocalScript', resetkey)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -121,8 +129,8 @@ local function NCPUF_fake_script() -- resetkey.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(NCPUF_fake_script)()
-local function CJHYGHJ_fake_script() -- CloseButton.Script 
+coroutine.wrap(CWTJT_fake_script)()
+local function RZSWD_fake_script() -- CloseButton.Script 
 	local script = Instance.new('Script', CloseButton)
 
 	frame = script.Parent.Parent
@@ -132,47 +140,25 @@ local function CJHYGHJ_fake_script() -- CloseButton.Script
 		frame.Visible = false
 	end)
 end
-coroutine.wrap(CJHYGHJ_fake_script)()
-local function OLJDBCY_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	local b = script.Parent.TextButton
-	local f = script.Parent.Frame
-	local cb = script.Parent.Frame.TextButton
-	
-	b.MouseButton1Click:Connect(function()
-		f:TweenPosition(UDim2.new(0.231, 0,0.214,0),"Quint","Quint")
-		
-	end)
-end
-coroutine.wrap(OLJDBCY_fake_script)()
-local function BQZPL_fake_script() -- fov_2.LocalScript 
-	local script = Instance.new('LocalScript', fov_2)
+coroutine.wrap(RZSWD_fake_script)()
+local function GFOBNRL_fake_script() -- svh.LocalScript 
+	local script = Instance.new('LocalScript', svh)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
 		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(BQZPL_fake_script)()
-local function FONES_fake_script() -- TextButton.Script 
-	local script = Instance.new('Script', TextButton)
+coroutine.wrap(GFOBNRL_fake_script)()
+local function BUPXKI_fake_script() -- RedeemCodeOpen.Script 
+	local script = Instance.new('Script', RedeemCodeOpen)
 
 	button = script.Parent
-	frame = script.Parent.Parent.Parent.OpenTSKit.Frame
+	frame = script.Parent.Parent.Parent.OpenTSKit.MainFrame
 	
 	button.MouseButton1Click:connect(function()
 		frame.Visible = true
 	end)
 	
 end
-coroutine.wrap(FONES_fake_script)()
-local function KIGTT_fake_script() -- OpenTSKit.LocalScript 
-	local script = Instance.new('LocalScript', OpenTSKit)
-
-	local Frame = script.Parent.Frame
-	
-	Frame.Draggable = true
-	Frame.Active = true
-end
-coroutine.wrap(KIGTT_fake_script)()
+coroutine.wrap(BUPXKI_fake_script)()
