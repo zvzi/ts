@@ -107,7 +107,7 @@ Roundify.SliceScale = 0.583
 
 -- Scripts:
 
-local function GXCGRTY_fake_script() -- fov.LocalScript 
+local function DFYQ_fake_script() -- fov.LocalScript 
 	local script = Instance.new('LocalScript', fov)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -115,8 +115,8 @@ local function GXCGRTY_fake_script() -- fov.LocalScript
 		game.Workspace.CurrentCamera.FieldOfView  = 100
 	end)
 end
-coroutine.wrap(GXCGRTY_fake_script)()
-local function TNTQ_fake_script() -- resetkey.LocalScript 
+coroutine.wrap(DFYQ_fake_script)()
+local function UJRBC_fake_script() -- resetkey.LocalScript 
 	local script = Instance.new('LocalScript', resetkey)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -130,8 +130,8 @@ local function TNTQ_fake_script() -- resetkey.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(TNTQ_fake_script)()
-local function GPKEXA_fake_script() -- CloseButton.Script 
+coroutine.wrap(UJRBC_fake_script)()
+local function DPFHLJM_fake_script() -- CloseButton.Script 
 	local script = Instance.new('Script', CloseButton)
 
 	frame = script.Parent.Parent
@@ -141,8 +141,8 @@ local function GPKEXA_fake_script() -- CloseButton.Script
 		frame.Visible = false
 	end)
 end
-coroutine.wrap(GPKEXA_fake_script)()
-local function TPON_fake_script() -- svh.LocalScript 
+coroutine.wrap(DPFHLJM_fake_script)()
+local function GPEA_fake_script() -- svh.LocalScript 
 	local script = Instance.new('LocalScript', svh)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -150,8 +150,8 @@ local function TPON_fake_script() -- svh.LocalScript
 		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(TPON_fake_script)()
-local function DJFMLDZ_fake_script() -- RedeemCodeOpen.Script 
+coroutine.wrap(GPEA_fake_script)()
+local function NFLS_fake_script() -- RedeemCodeOpen.Script 
 	local script = Instance.new('Script', RedeemCodeOpen)
 
 	button = script.Parent
@@ -162,4 +162,13 @@ local function DJFMLDZ_fake_script() -- RedeemCodeOpen.Script
 	end)
 	
 end
-coroutine.wrap(DJFMLDZ_fake_script)()
+coroutine.wrap(NFLS_fake_script)()
+local function TQWSFIV_fake_script() -- OpenTSKit.LocalScript 
+	local script = Instance.new('LocalScript', OpenTSKit)
+
+	local Frame = script.Parent.MainFrame
+	
+	Frame.Draggable = true
+	Frame.Active = true
+end
+coroutine.wrap(TQWSFIV_fake_script)()
