@@ -23,6 +23,7 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BackgroundTransparency = 0.500
 MainFrame.Position = UDim2.new(0.190511525, 0, 0.224352643, 0)
 MainFrame.Size = UDim2.new(0, 761, 0, 420)
+MainFrame.Visible = false
 
 fov.Name = "fov"
 fov.Parent = MainFrame
@@ -106,7 +107,7 @@ Roundify.SliceScale = 0.583
 
 -- Scripts:
 
-local function DPOJY_fake_script() -- fov.LocalScript 
+local function GXCGRTY_fake_script() -- fov.LocalScript 
 	local script = Instance.new('LocalScript', fov)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -114,8 +115,8 @@ local function DPOJY_fake_script() -- fov.LocalScript
 		game.Workspace.CurrentCamera.FieldOfView  = 100
 	end)
 end
-coroutine.wrap(DPOJY_fake_script)()
-local function AIINMMT_fake_script() -- resetkey.LocalScript 
+coroutine.wrap(GXCGRTY_fake_script)()
+local function TNTQ_fake_script() -- resetkey.LocalScript 
 	local script = Instance.new('LocalScript', resetkey)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -129,8 +130,8 @@ local function AIINMMT_fake_script() -- resetkey.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(AIINMMT_fake_script)()
-local function JZCIVU_fake_script() -- CloseButton.Script 
+coroutine.wrap(TNTQ_fake_script)()
+local function GPKEXA_fake_script() -- CloseButton.Script 
 	local script = Instance.new('Script', CloseButton)
 
 	frame = script.Parent.Parent
@@ -140,8 +141,8 @@ local function JZCIVU_fake_script() -- CloseButton.Script
 		frame.Visible = false
 	end)
 end
-coroutine.wrap(JZCIVU_fake_script)()
-local function ODSIBC_fake_script() -- svh.LocalScript 
+coroutine.wrap(GPKEXA_fake_script)()
+local function TPON_fake_script() -- svh.LocalScript 
 	local script = Instance.new('LocalScript', svh)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -149,8 +150,8 @@ local function ODSIBC_fake_script() -- svh.LocalScript
 		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(ODSIBC_fake_script)()
-local function CXRSEYH_fake_script() -- RedeemCodeOpen.Script 
+coroutine.wrap(TPON_fake_script)()
+local function DJFMLDZ_fake_script() -- RedeemCodeOpen.Script 
 	local script = Instance.new('Script', RedeemCodeOpen)
 
 	button = script.Parent
@@ -161,4 +162,4 @@ local function CXRSEYH_fake_script() -- RedeemCodeOpen.Script
 	end)
 	
 end
-coroutine.wrap(CXRSEYH_fake_script)()
+coroutine.wrap(DJFMLDZ_fake_script)()
