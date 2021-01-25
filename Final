@@ -106,7 +106,7 @@ Roundify.SliceScale = 0.583
 
 -- Scripts:
 
-local function GPRI_fake_script() -- fov.LocalScript 
+local function VOSXGKJ_fake_script() -- fov.LocalScript 
 	local script = Instance.new('LocalScript', fov)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -114,8 +114,8 @@ local function GPRI_fake_script() -- fov.LocalScript
 		game.Workspace.CurrentCamera.FieldOfView  = 100
 	end)
 end
-coroutine.wrap(GPRI_fake_script)()
-local function CWTJT_fake_script() -- resetkey.LocalScript 
+coroutine.wrap(VOSXGKJ_fake_script)()
+local function XQEKAY_fake_script() -- resetkey.LocalScript 
 	local script = Instance.new('LocalScript', resetkey)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -129,8 +129,8 @@ local function CWTJT_fake_script() -- resetkey.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(CWTJT_fake_script)()
-local function RZSWD_fake_script() -- CloseButton.Script 
+coroutine.wrap(XQEKAY_fake_script)()
+local function WHVF_fake_script() -- CloseButton.Script 
 	local script = Instance.new('Script', CloseButton)
 
 	frame = script.Parent.Parent
@@ -140,8 +140,8 @@ local function RZSWD_fake_script() -- CloseButton.Script
 		frame.Visible = false
 	end)
 end
-coroutine.wrap(RZSWD_fake_script)()
-local function GFOBNRL_fake_script() -- svh.LocalScript 
+coroutine.wrap(WHVF_fake_script)()
+local function DPAGW_fake_script() -- svh.LocalScript 
 	local script = Instance.new('LocalScript', svh)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -149,8 +149,8 @@ local function GFOBNRL_fake_script() -- svh.LocalScript
 		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(GFOBNRL_fake_script)()
-local function BUPXKI_fake_script() -- RedeemCodeOpen.Script 
+coroutine.wrap(DPAGW_fake_script)()
+local function KQQUI_fake_script() -- RedeemCodeOpen.Script 
 	local script = Instance.new('Script', RedeemCodeOpen)
 
 	button = script.Parent
@@ -161,4 +161,4 @@ local function BUPXKI_fake_script() -- RedeemCodeOpen.Script
 	end)
 	
 end
-coroutine.wrap(BUPXKI_fake_script)()
+coroutine.wrap(KQQUI_fake_script)()
