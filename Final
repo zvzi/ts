@@ -23,7 +23,6 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BackgroundTransparency = 0.500
 MainFrame.Position = UDim2.new(0.190511525, 0, 0.224352643, 0)
 MainFrame.Size = UDim2.new(0, 761, 0, 420)
-MainFrame.Visible = false
 
 fov.Name = "fov"
 fov.Parent = MainFrame
@@ -34,7 +33,7 @@ fov.Position = UDim2.new(0.0749014467, 0, 0.211904764, 0)
 fov.Size = UDim2.new(0, 186, 0, 39)
 fov.Font = Enum.Font.GothamBlack
 fov.Text = "Change FOV to 120"
-fov.TextColor3 = Color3.fromRGB(0, 0, 0)
+fov.TextColor3 = Color3.fromRGB(243, 198, 199)
 fov.TextScaled = true
 fov.TextSize = 30.000
 fov.TextWrapped = true
@@ -48,7 +47,7 @@ resetkey.Position = UDim2.new(0.421813428, 0, 0.20714286, 0)
 resetkey.Size = UDim2.new(0, 186, 0, 39)
 resetkey.Font = Enum.Font.GothamBlack
 resetkey.Text = "Reset Key (X)"
-resetkey.TextColor3 = Color3.fromRGB(0, 0, 0)
+resetkey.TextColor3 = Color3.fromRGB(255, 160, 162)
 resetkey.TextScaled = true
 resetkey.TextSize = 30.000
 resetkey.TextWrapped = true
@@ -69,13 +68,14 @@ svh.Parent = MainFrame
 svh.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
 svh.BackgroundTransparency = 0.900
 svh.BorderSizePixel = 0
-svh.Position = UDim2.new(0.0749014467, 0, 0.211904764, 0)
+svh.Position = UDim2.new(0.0840998739, 0, 0.502380967, 0)
 svh.Size = UDim2.new(0, 186, 0, 39)
 svh.Font = Enum.Font.GothamBlack
 svh.Text = "ServerHop"
-svh.TextColor3 = Color3.fromRGB(0, 0, 0)
+svh.TextColor3 = Color3.fromRGB(255, 188, 189)
 svh.TextScaled = true
 svh.TextSize = 30.000
+svh.TextStrokeColor3 = Color3.fromRGB(255, 189, 190)
 svh.TextWrapped = true
 
 RedeemCodeOpen.Name = "RedeemCodeOpen"
@@ -106,7 +106,7 @@ Roundify.SliceScale = 0.583
 
 -- Scripts:
 
-local function VOSXGKJ_fake_script() -- fov.LocalScript 
+local function DPOJY_fake_script() -- fov.LocalScript 
 	local script = Instance.new('LocalScript', fov)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -114,8 +114,8 @@ local function VOSXGKJ_fake_script() -- fov.LocalScript
 		game.Workspace.CurrentCamera.FieldOfView  = 100
 	end)
 end
-coroutine.wrap(VOSXGKJ_fake_script)()
-local function XQEKAY_fake_script() -- resetkey.LocalScript 
+coroutine.wrap(DPOJY_fake_script)()
+local function AIINMMT_fake_script() -- resetkey.LocalScript 
 	local script = Instance.new('LocalScript', resetkey)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -129,8 +129,8 @@ local function XQEKAY_fake_script() -- resetkey.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(XQEKAY_fake_script)()
-local function WHVF_fake_script() -- CloseButton.Script 
+coroutine.wrap(AIINMMT_fake_script)()
+local function JZCIVU_fake_script() -- CloseButton.Script 
 	local script = Instance.new('Script', CloseButton)
 
 	frame = script.Parent.Parent
@@ -140,8 +140,8 @@ local function WHVF_fake_script() -- CloseButton.Script
 		frame.Visible = false
 	end)
 end
-coroutine.wrap(WHVF_fake_script)()
-local function DPAGW_fake_script() -- svh.LocalScript 
+coroutine.wrap(JZCIVU_fake_script)()
+local function ODSIBC_fake_script() -- svh.LocalScript 
 	local script = Instance.new('LocalScript', svh)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -149,8 +149,8 @@ local function DPAGW_fake_script() -- svh.LocalScript
 		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(DPAGW_fake_script)()
-local function KQQUI_fake_script() -- RedeemCodeOpen.Script 
+coroutine.wrap(ODSIBC_fake_script)()
+local function CXRSEYH_fake_script() -- RedeemCodeOpen.Script 
 	local script = Instance.new('Script', RedeemCodeOpen)
 
 	button = script.Parent
@@ -161,4 +161,4 @@ local function KQQUI_fake_script() -- RedeemCodeOpen.Script
 	end)
 	
 end
-coroutine.wrap(KQQUI_fake_script)()
+coroutine.wrap(CXRSEYH_fake_script)()
