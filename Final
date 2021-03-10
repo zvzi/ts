@@ -7,7 +7,7 @@ local svh = Instance.new("TextButton")
 local RedeemCodeOpen = Instance.new("TextButton")
 local Roundify = Instance.new("ImageLabel")
 
---Properties:
+--{body 2
 
 OpenTSKit.Name = "OpenTSKit"
 OpenTSKit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
