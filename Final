@@ -1,3 +1,6 @@
+-- entire script developed by Kutsukie
+-- latest update was like 2 months ago, idk the purpose of updating this mf anymore but enjoy
+
 local OpenTSKit = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local fov = Instance.new("TextButton")
