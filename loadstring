@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/13thOdyssey/ts/main/Final", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zvzi/ts/main/Final", true))()
