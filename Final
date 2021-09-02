@@ -1,82 +1,43 @@
--- entire script developed by Kutsukie
--- latest update was like 2 months ago, idk the purpose of updating this mf anymore but enjoy
+
+-- i updated this
+
+-- Instances:
 
 local OpenTSKit = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
-local fov = Instance.new("TextButton")
-local resetkey = Instance.new("TextButton")
-local CloseButton = Instance.new("TextButton")
-local svh = Instance.new("TextButton")
 local RedeemCodeOpen = Instance.new("TextButton")
 local Roundify = Instance.new("ImageLabel")
+local MainFrame = Instance.new("ImageLabel")
+local fov = Instance.new("TextButton")
+local FOV = Instance.new("ScreenGui")
+local FOV_2 = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local FOVValue = Instance.new("TextLabel")
+local Slider = Instance.new("Frame")
+local Knob = Instance.new("Frame")
+local Reset = Instance.new("TextButton")
+local svh = Instance.new("TextButton")
+local CloseButton_Roundify_12px = Instance.new("ImageLabel")
+local updates = Instance.new("TextButton")
+local Roundify_2 = Instance.new("ImageLabel")
+local updframe = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local CloseButton_Roundify_12px_2 = Instance.new("ImageLabel")
+local cord = Instance.new("TextButton")
+local Roundify_3 = Instance.new("ImageLabel")
+local cordframe = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local CloseButton_Roundify_12px_3 = Instance.new("ImageLabel")
 
---{body 2
+--Properties:
 
+OpenTSKit.Archivable = false
 OpenTSKit.Name = "OpenTSKit"
 OpenTSKit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OpenTSKit.ResetOnSpawn = false
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = OpenTSKit
-MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-MainFrame.BackgroundTransparency = 0.500
-MainFrame.Position = UDim2.new(0.190511525, 0, 0.224352643, 0)
-MainFrame.Size = UDim2.new(0, 761, 0, 420)
-MainFrame.Visible = false
-
-fov.Name = "fov"
-fov.Parent = MainFrame
-fov.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
-fov.BackgroundTransparency = 0.900
-fov.BorderSizePixel = 0
-fov.Position = UDim2.new(0.0749014467, 0, 0.211904764, 0)
-fov.Size = UDim2.new(0, 186, 0, 39)
-fov.Font = Enum.Font.GothamBlack
-fov.Text = "Change FOV to 120"
-fov.TextColor3 = Color3.fromRGB(243, 198, 199)
-fov.TextScaled = true
-fov.TextSize = 30.000
-fov.TextWrapped = true
-
-resetkey.Name = "reset key"
-resetkey.Parent = MainFrame
-resetkey.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
-resetkey.BackgroundTransparency = 0.900
-resetkey.BorderSizePixel = 0
-resetkey.Position = UDim2.new(0.421813428, 0, 0.20714286, 0)
-resetkey.Size = UDim2.new(0, 186, 0, 39)
-resetkey.Font = Enum.Font.GothamBlack
-resetkey.Text = "Reset Key (X)"
-resetkey.TextColor3 = Color3.fromRGB(255, 160, 162)
-resetkey.TextScaled = true
-resetkey.TextSize = 30.000
-resetkey.TextWrapped = true
-
-CloseButton.Name = "CloseButton"
-CloseButton.Parent = MainFrame
-CloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-CloseButton.Position = UDim2.new(0.889198124, 0, -0.0016420274, 0)
-CloseButton.Size = UDim2.new(0, 63, 0, 46)
-CloseButton.Font = Enum.Font.Cartoon
-CloseButton.Text = "X"
-CloseButton.TextScaled = true
-CloseButton.TextSize = 32.000
-CloseButton.TextWrapped = true
-
-svh.Name = "svh"
-svh.Parent = MainFrame
-svh.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
-svh.BackgroundTransparency = 0.900
-svh.BorderSizePixel = 0
-svh.Position = UDim2.new(0.0840998739, 0, 0.502380967, 0)
-svh.Size = UDim2.new(0, 186, 0, 39)
-svh.Font = Enum.Font.GothamBlack
-svh.Text = "ServerHop"
-svh.TextColor3 = Color3.fromRGB(255, 188, 189)
-svh.TextScaled = true
-svh.TextSize = 30.000
-svh.TextStrokeColor3 = Color3.fromRGB(255, 189, 190)
-svh.TextWrapped = true
-
+RedeemCodeOpen.Archivable = false
 RedeemCodeOpen.Name = "RedeemCodeOpen"
 RedeemCodeOpen.Parent = OpenTSKit
 RedeemCodeOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -103,19 +64,351 @@ Roundify.ScaleType = Enum.ScaleType.Slice
 Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
 Roundify.SliceScale = 0.583
 
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = OpenTSKit
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Position = UDim2.new(0.0508512259, 0, 0.142841682, 0)
+MainFrame.Size = UDim2.new(0, 679, 0, 359)
+MainFrame.Visible = false
+MainFrame.Image = "rbxassetid://3570695787"
+MainFrame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.ImageTransparency = 0.500
+MainFrame.ScaleType = Enum.ScaleType.Slice
+MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+MainFrame.SliceScale = 0.120
+
+fov.Name = "fov"
+fov.Parent = MainFrame
+fov.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
+fov.BackgroundTransparency = 0.900
+fov.BorderSizePixel = 0
+fov.Position = UDim2.new(0.0749014467, 0, 0.211904764, 0)
+fov.Size = UDim2.new(0, 186, 0, 39)
+fov.Font = Enum.Font.GothamBlack
+fov.Text = ""
+fov.TextColor3 = Color3.fromRGB(243, 198, 199)
+fov.TextScaled = true
+fov.TextSize = 30.000
+fov.TextWrapped = true
+
+FOV.Name = "FOV"
+FOV.Parent = fov
+
+FOV_2.Name = "FOV"
+FOV_2.Parent = FOV
+FOV_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FOV_2.BackgroundTransparency = 0.300
+FOV_2.BorderColor3 = Color3.fromRGB(64, 64, 64)
+FOV_2.BorderSizePixel = 2
+FOV_2.Position = UDim2.new(0.179370746, -50, 0.653922796, -200)
+FOV_2.Size = UDim2.new(0, 182, 0, 58)
+FOV_2.Visible = false
+
+Title.Name = "Title"
+Title.Parent = FOV_2
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(1.00274861, 0, 0.327586293, 0)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "FOV Slider"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+FOVValue.Name = "FOVValue"
+FOVValue.Parent = Title
+FOVValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FOVValue.BackgroundTransparency = 1.000
+FOVValue.Position = UDim2.new(0, 0, 0.520689607, 0)
+FOVValue.Size = UDim2.new(1.03706574, 0, 0.479310155, 0)
+FOVValue.Font = Enum.Font.SourceSans
+FOVValue.Text = "70"
+FOVValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+FOVValue.TextScaled = true
+FOVValue.TextSize = 14.000
+FOVValue.TextWrapped = true
+
+Slider.Name = "Slider"
+Slider.Parent = FOV_2
+Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Slider.BorderColor3 = Color3.fromRGB(100, 100, 100)
+Slider.Position = UDim2.new(0.0708551109, 0, 0.443103403, 0)
+Slider.Size = UDim2.new(0.841232896, 0, 0.0620688237, 0)
+
+Knob.Name = "Knob"
+Knob.Parent = Slider
+Knob.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+Knob.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Knob.Position = UDim2.new(0, -10, 0, -10)
+Knob.Size = UDim2.new(0, 20, 0, 20)
+Knob.Style = Enum.FrameStyle.ChatBlue
+
+Reset.Name = "Reset"
+Reset.Parent = MainFrame
+Reset.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
+Reset.BackgroundTransparency = 0.900
+Reset.BorderSizePixel = 0
+Reset.Position = UDim2.new(0.569088817, 0, 0.190429762, 0)
+Reset.Size = UDim2.new(0, 186, 0, 39)
+Reset.Font = Enum.Font.SourceSans
+Reset.Text = "Reset"
+Reset.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reset.TextScaled = true
+Reset.TextSize = 30.000
+Reset.TextWrapped = true
+
+svh.Name = "svh"
+svh.Parent = MainFrame
+svh.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
+svh.BackgroundTransparency = 0.900
+svh.BorderSizePixel = 0
+svh.Position = UDim2.new(0.0840998739, 0, 0.502380967, 0)
+svh.Size = UDim2.new(0, 186, 0, 39)
+svh.Font = Enum.Font.Nunito
+svh.Text = "Server Hop"
+svh.TextColor3 = Color3.fromRGB(255, 255, 255)
+svh.TextScaled = true
+svh.TextSize = 30.000
+svh.TextStrokeColor3 = Color3.fromRGB(255, 189, 190)
+svh.TextWrapped = true
+
+CloseButton_Roundify_12px.Name = "CloseButton_Roundify_12px"
+CloseButton_Roundify_12px.Parent = MainFrame
+CloseButton_Roundify_12px.Active = true
+CloseButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_Roundify_12px.BackgroundTransparency = 1.000
+CloseButton_Roundify_12px.Position = UDim2.new(0.928830385, 0, 0.0729885101, 0)
+CloseButton_Roundify_12px.Selectable = true
+CloseButton_Roundify_12px.Size = UDim2.new(0.0477269255, 0, 0.0888341665, 0)
+CloseButton_Roundify_12px.Image = "rbxassetid://3570695787"
+CloseButton_Roundify_12px.ImageColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+CloseButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+CloseButton_Roundify_12px.SliceScale = 0.120
+
+updates.Name = "updates"
+updates.Parent = OpenTSKit
+updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+updates.BackgroundTransparency = 1.000
+updates.BorderColor3 = Color3.fromRGB(255, 255, 255)
+updates.BorderSizePixel = 0
+updates.Position = UDim2.new(0.767988324, 0, 0.806214511, 0)
+updates.Size = UDim2.new(0, 79, 0, 17)
+updates.Visible = false
+updates.ZIndex = 5
+updates.Font = Enum.Font.GothamBlack
+updates.Text = "UPDATES"
+updates.TextScaled = true
+updates.TextSize = 14.000
+updates.TextWrapped = true
+
+Roundify_2.Name = "Roundify"
+Roundify_2.Parent = updates
+Roundify_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_2.BackgroundTransparency = 1.000
+Roundify_2.Position = UDim2.new(0.506570697, 0, 0.497510403, 0)
+Roundify_2.Size = UDim2.new(1.12502944, 14, 0.626599967, 14)
+Roundify_2.Image = "rbxassetid://3570695787"
+Roundify_2.ScaleType = Enum.ScaleType.Slice
+Roundify_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_2.SliceScale = 0.583
+
+updframe.Name = "updframe"
+updframe.Parent = updates
+updframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+updframe.Position = UDim2.new(-3.2405057, 0, -10.5294113, 0)
+updframe.Size = UDim2.new(0, 334, 0, 156)
+updframe.Visible = false
+
+TextLabel.Parent = updframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 0.300
+TextLabel.Position = UDim2.new(0.233532935, 0, 0.141025648, 0)
+TextLabel.Size = UDim2.new(0, 197, 0, 34)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Yo! Update 1.1, 9/2/2021."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = updframe
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.Position = UDim2.new(0.233532935, 0, 0.532051265, 0)
+TextLabel_2.Size = UDim2.new(0, 209, 0, 57)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "added an fov slider and changed most of the GUI buttons that's all"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+CloseButton_Roundify_12px_2.Name = "CloseButton_Roundify_12px"
+CloseButton_Roundify_12px_2.Parent = updframe
+CloseButton_Roundify_12px_2.Active = true
+CloseButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_Roundify_12px_2.BackgroundTransparency = 1.000
+CloseButton_Roundify_12px_2.Position = UDim2.new(0.928830385, 0, 0.0729885101, 0)
+CloseButton_Roundify_12px_2.Selectable = true
+CloseButton_Roundify_12px_2.Size = UDim2.new(0.0477269255, 0, 0.0888341665, 0)
+CloseButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
+CloseButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+CloseButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+CloseButton_Roundify_12px_2.SliceScale = 0.120
+
+cord.Name = "cord?"
+cord.Parent = OpenTSKit
+cord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cord.BackgroundTransparency = 1.000
+cord.BorderColor3 = Color3.fromRGB(255, 255, 255)
+cord.BorderSizePixel = 0
+cord.Position = UDim2.new(0.628825784, 0, 0.806214511, 0)
+cord.Size = UDim2.new(0, 79, 0, 17)
+cord.Visible = false
+cord.ZIndex = 5
+cord.Font = Enum.Font.GothamBlack
+cord.Text = "Discord"
+cord.TextScaled = true
+cord.TextSize = 14.000
+cord.TextWrapped = true
+
+Roundify_3.Name = "Roundify"
+Roundify_3.Parent = cord
+Roundify_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_3.BackgroundTransparency = 1.000
+Roundify_3.Position = UDim2.new(0.506570697, 0, 0.497510403, 0)
+Roundify_3.Size = UDim2.new(1.12502944, 14, 0.626599967, 14)
+Roundify_3.Image = "rbxassetid://3570695787"
+Roundify_3.ScaleType = Enum.ScaleType.Slice
+Roundify_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_3.SliceScale = 0.583
+
+cordframe.Name = "cordframe"
+cordframe.Parent = cord
+cordframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+cordframe.Position = UDim2.new(-3.2405057, 0, -10.5294113, 0)
+cordframe.Size = UDim2.new(0, 334, 0, 156)
+cordframe.Visible = false
+
+TextLabel_3.Parent = cordframe
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BackgroundTransparency = 0.300
+TextLabel_3.Position = UDim2.new(0.233532935, 0, 0.141025648, 0)
+TextLabel_3.Size = UDim2.new(0, 197, 0, 34)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Discord"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 44.000
+
+TextLabel_4.Parent = cordframe
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.Position = UDim2.new(0.233532935, 0, 0.532051265, 0)
+TextLabel_4.Size = UDim2.new(0, 209, 0, 57)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "will be making a server in the future just hang on for now"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+CloseButton_Roundify_12px_3.Name = "CloseButton_Roundify_12px"
+CloseButton_Roundify_12px_3.Parent = cordframe
+CloseButton_Roundify_12px_3.Active = true
+CloseButton_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseButton_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_Roundify_12px_3.BackgroundTransparency = 1.000
+CloseButton_Roundify_12px_3.Position = UDim2.new(0.928830385, 0, 0.0729885101, 0)
+CloseButton_Roundify_12px_3.Selectable = true
+CloseButton_Roundify_12px_3.Size = UDim2.new(0.0477269255, 0, 0.0888341665, 0)
+CloseButton_Roundify_12px_3.Image = "rbxassetid://3570695787"
+CloseButton_Roundify_12px_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+CloseButton_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+CloseButton_Roundify_12px_3.SliceScale = 0.120
+
 -- Scripts:
 
-local function DFYQ_fake_script() -- fov.LocalScript 
-	local script = Instance.new('LocalScript', fov)
+local function BFHKMXL_fake_script() -- RedeemCodeOpen.Script 
+	local script = Instance.new('Script', RedeemCodeOpen)
 
-	script.Parent.MouseButton1Click:Connect(function()
+	button = script.Parent
+	frame = script.Parent.Parent.Parent.OpenTSKit.MainFrame
 	
-		game.Workspace.CurrentCamera.FieldOfView  = 100
+	button.MouseButton1Click:connect(function()
+		frame.Visible = true
+	end)
+	
+end
+coroutine.wrap(BFHKMXL_fake_script)()
+local function EHBHOXB_fake_script() -- OpenTSKit.LocalScript 
+	local script = Instance.new('LocalScript', OpenTSKit)
+
+	local Frame = script.Parent.MainFrame
+	
+	Frame.Draggable = true
+	Frame.Active = true
+end
+coroutine.wrap(EHBHOXB_fake_script)()
+local function DKDXS_fake_script() -- FOV_2.FOVLogic 
+	local script = Instance.new('LocalScript', FOV_2)
+
+	local UIS = game:GetService("UserInputService")
+	
+	wait(1)
+	
+	local P = script.Parent
+	local slider = P.Slider
+	local knob = slider.Knob
+	local FOVLabel = P.FOVValue
+	local knobGrabbed = false
+	
+	local camera = workspace.CurrentCamera
+	
+	function GrabFOVKnob()
+		knobGrabbed = true
+	end
+	
+	function MoveFOVKnob(screenPosition)
+		local yDiff = screenPosition.y - slider.AbsolutePosition.y
+		local knobPositionRatio = math.min(math.max(yDiff / slider.AbsoluteSize.y, 0), 1)
+		
+		local newFOV = 20 + 50 * (1 - knobPositionRatio)
+		camera.FieldOfView = newFOV
+		
+		knob.Position = UDim2.new(0, -10, knobPositionRatio, -10)
+		FOVLabel.Text = math.floor(newFOV)
+	end
+	
+	function ReleaseFOVKnob()
+		knobGrabbed = false
+	end
+	
+	knob.InputBegan:connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			GrabFOVKnob()
+		end
+	end)
+	
+	UIS.InputChanged:connect(function(input, gameProcessedEvent)
+		if (not gameProcessedEvent and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) and knobGrabbed) then
+			MoveFOVKnob(input.Position)
+		end
+	end)
+	
+	UIS.InputEnded:connect(function(input, gameProcessedEvent)
+		if (not gameProcessedEvent and input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			ReleaseFOVKnob()
+		end
 	end)
 end
-coroutine.wrap(DFYQ_fake_script)()
-local function UJRBC_fake_script() -- resetkey.LocalScript 
-	local script = Instance.new('LocalScript', resetkey)
+coroutine.wrap(DKDXS_fake_script)()
+local function QCPLM_fake_script() -- Reset.LocalScript 
+	local script = Instance.new('LocalScript', Reset)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
@@ -128,9 +421,18 @@ local function UJRBC_fake_script() -- resetkey.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(UJRBC_fake_script)()
-local function DPFHLJM_fake_script() -- CloseButton.Script 
-	local script = Instance.new('Script', CloseButton)
+coroutine.wrap(QCPLM_fake_script)()
+local function CIEBXP_fake_script() -- svh.LocalScript 
+	local script = Instance.new('LocalScript', svh)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
+	end)
+end
+coroutine.wrap(CIEBXP_fake_script)()
+local function DCXMCYT_fake_script() -- CloseButton_Roundify_12px.Script 
+	local script = Instance.new('Script', CloseButton_Roundify_12px)
 
 	frame = script.Parent.Parent
 	button = script.Parent
@@ -139,34 +441,50 @@ local function DPFHLJM_fake_script() -- CloseButton.Script
 		frame.Visible = false
 	end)
 end
-coroutine.wrap(DPFHLJM_fake_script)()
-local function GPEA_fake_script() -- svh.LocalScript 
-	local script = Instance.new('LocalScript', svh)
-
-	script.Parent.MouseButton1Click:Connect(function()
-	
-		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
-	end)
-end
-coroutine.wrap(GPEA_fake_script)()
-local function NFLS_fake_script() -- RedeemCodeOpen.Script 
-	local script = Instance.new('Script', RedeemCodeOpen)
+coroutine.wrap(DCXMCYT_fake_script)()
+local function XUHAJ_fake_script() -- updates.Script 
+	local script = Instance.new('Script', updates)
 
 	button = script.Parent
-	frame = script.Parent.Parent.Parent.OpenTSKit.MainFrame
+	frame = script.Parent.Parent.Parent.OpenTSKit.updframe
 	
 	button.MouseButton1Click:connect(function()
 		frame.Visible = true
 	end)
 	
 end
-coroutine.wrap(NFLS_fake_script)()
-local function TQWSFIV_fake_script() -- OpenTSKit.LocalScript 
-	local script = Instance.new('LocalScript', OpenTSKit)
+coroutine.wrap(XUHAJ_fake_script)()
+local function LJIRGD_fake_script() -- CloseButton_Roundify_12px_2.Script 
+	local script = Instance.new('Script', CloseButton_Roundify_12px_2)
 
-	local Frame = script.Parent.MainFrame
+	frame = script.Parent.Parent
+	button = script.Parent
 	
-	Frame.Draggable = true
-	Frame.Active = true
+	button.MouseButton1Click:connect(function()
+		frame.Visible = false
+	end)
 end
-coroutine.wrap(TQWSFIV_fake_script)()
+coroutine.wrap(LJIRGD_fake_script)()
+local function ZPIZMGF_fake_script() -- cord.Script 
+	local script = Instance.new('Script', cord)
+
+	button = script.Parent
+	frame = script.Parent.Parent.Parent.OpenTSKit.cordframe
+	
+	button.MouseButton1Click:connect(function()
+		frame.Visible = true
+	end)
+	
+end
+coroutine.wrap(ZPIZMGF_fake_script)()
+local function DJAQV_fake_script() -- CloseButton_Roundify_12px_3.Script 
+	local script = Instance.new('Script', CloseButton_Roundify_12px_3)
+
+	frame = script.Parent.Parent
+	button = script.Parent
+	
+	button.MouseButton1Click:connect(function()
+		frame.Visible = false
+	end)
+end
+coroutine.wrap(DJAQV_fake_script)()
