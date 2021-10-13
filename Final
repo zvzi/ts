@@ -3,471 +3,378 @@
 
 -- Instances:
 
-local OpenTSKit = Instance.new("ScreenGui")
-local RedeemCodeOpen = Instance.new("TextButton")
+local ScreenGui = Instance.new("ScreenGui")
+local themain = Instance.new("Frame")
 local Roundify = Instance.new("ImageLabel")
-local MainFrame = Instance.new("ImageLabel")
-local Reset = Instance.new("TextButton")
-local svh = Instance.new("TextButton")
-local Close = Instance.new("ImageLabel")
-local updates = Instance.new("TextButton")
-local Roundify_2 = Instance.new("ImageLabel")
-local updframe = Instance.new("Frame")
+local BulletTrails = Instance.new("TextButton")
+local thing = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local lastupdated1052021 = Instance.new("TextLabel")
+local resetkey = Instance.new("TextButton")
+local Serverhop = Instance.new("TextButton")
+local MAINFRAME = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local CloseButton_Roundify_12px = Instance.new("ImageLabel")
-local cord = Instance.new("TextButton")
-local Roundify_3 = Instance.new("ImageLabel")
-local cordframe = Instance.new("Frame")
-local TextLabel_3 = Instance.new("TextLabel")
-local TextLabel_4 = Instance.new("TextLabel")
-local CloseButton_Roundify_12px_2 = Instance.new("ImageLabel")
-local FOV = Instance.new("ScreenGui")
-local FOV_2 = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
-local FOVValue = Instance.new("TextLabel")
-local Slider = Instance.new("Frame")
-local Knob = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local exit = Instance.new("TextButton")
+local open = Instance.new("TextButton")
 
 --Properties:
 
-OpenTSKit.Archivable = false
-OpenTSKit.Name = "OpenTSKit"
-OpenTSKit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-OpenTSKit.ResetOnSpawn = false
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-RedeemCodeOpen.Archivable = false
-RedeemCodeOpen.Name = "RedeemCodeOpen"
-RedeemCodeOpen.Parent = OpenTSKit
-RedeemCodeOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RedeemCodeOpen.BorderColor3 = Color3.fromRGB(255, 255, 255)
-RedeemCodeOpen.BorderSizePixel = 0
-RedeemCodeOpen.Position = UDim2.new(0.0203752201, 0, 0.451429516, 0)
-RedeemCodeOpen.Size = UDim2.new(0, 149, 0, 38)
-RedeemCodeOpen.ZIndex = 5
-RedeemCodeOpen.Font = Enum.Font.GothamBlack
-RedeemCodeOpen.Text = "Open TS Kit"
-RedeemCodeOpen.TextScaled = true
-RedeemCodeOpen.TextSize = 14.000
-RedeemCodeOpen.TextWrapped = true
+themain.Name = "themain"
+themain.Parent = ScreenGui
+themain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+themain.BackgroundTransparency = 1.000
+themain.Position = UDim2.new(0.0169491451, 0, 0.0735586584, 0)
+themain.Size = UDim2.new(0, 905, 0, 294)
 
 Roundify.Name = "Roundify"
-Roundify.Parent = RedeemCodeOpen
+Roundify.Parent = themain
 Roundify.AnchorPoint = Vector2.new(0.5, 0.5)
-Roundify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Roundify.BackgroundTransparency = 1.000
-Roundify.Position = UDim2.new(0.506570697, 0, 0.497510403, 0)
-Roundify.Size = UDim2.new(1.12502944, 14, 0.626599967, 14)
+Roundify.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Roundify.BackgroundTransparency = 0.500
+Roundify.Position = UDim2.new(0.536959887, 0, 0.682105601, 0)
+Roundify.Size = UDim2.new(0.872832358, 24, 1.25623345, 24)
 Roundify.Image = "rbxassetid://3570695787"
+Roundify.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Roundify.ImageTransparency = 0.700
 Roundify.ScaleType = Enum.ScaleType.Slice
 Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
-Roundify.SliceScale = 0.583
+Roundify.SliceScale = 0.120
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = OpenTSKit
-MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainFrame.BackgroundTransparency = 1.000
-MainFrame.Position = UDim2.new(0.0508512259, 0, 0.142841682, 0)
-MainFrame.Size = UDim2.new(0, 679, 0, 359)
-MainFrame.Visible = false
-MainFrame.Image = "rbxassetid://3570695787"
-MainFrame.ImageColor3 = Color3.fromRGB(0, 0, 0)
-MainFrame.ImageTransparency = 0.500
-MainFrame.ScaleType = Enum.ScaleType.Slice
-MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
-MainFrame.SliceScale = 0.120
+BulletTrails.Name = "BulletTrails"
+BulletTrails.Parent = Roundify
+BulletTrails.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BulletTrails.BackgroundTransparency = 1.000
+BulletTrails.Position = UDim2.new(0.524779081, 0, 0.495089889, 0)
+BulletTrails.Size = UDim2.new(0, 188, 0, 62)
+BulletTrails.Font = Enum.Font.GothamBold
+BulletTrails.Text = "Bullet Trails (NOT MADE BY LOOTSU)"
+BulletTrails.TextColor3 = Color3.fromRGB(255, 255, 255)
+BulletTrails.TextScaled = true
+BulletTrails.TextSize = 14.000
+BulletTrails.TextWrapped = true
 
-Reset.Name = "Reset"
-Reset.Parent = MainFrame
-Reset.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
-Reset.BackgroundTransparency = 0.900
-Reset.BorderSizePixel = 0
-Reset.Position = UDim2.new(0.569088817, 0, 0.190429762, 0)
-Reset.Size = UDim2.new(0, 186, 0, 39)
-Reset.Font = Enum.Font.SourceSans
-Reset.Text = "Reset"
-Reset.TextColor3 = Color3.fromRGB(255, 255, 255)
-Reset.TextScaled = true
-Reset.TextSize = 30.000
-Reset.TextWrapped = true
+thing.Name = "thing"
+thing.Parent = Roundify
+thing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+thing.BackgroundTransparency = 1.000
+thing.Position = UDim2.new(0.114008196, 0, -0.00775090698, 0)
+thing.Size = UDim2.new(0.556135952, 0, 0.170090005, 0)
+thing.Font = Enum.Font.SourceSansSemibold
+thing.Text = "Ez - Legit mode"
+thing.TextColor3 = Color3.fromRGB(255, 255, 255)
+thing.TextScaled = true
+thing.TextSize = 14.000
+thing.TextWrapped = true
 
-svh.Name = "svh"
-svh.Parent = MainFrame
-svh.BackgroundColor3 = Color3.fromRGB(16, 66, 97)
-svh.BackgroundTransparency = 0.900
-svh.BorderSizePixel = 0
-svh.Position = UDim2.new(0.0840998739, 0, 0.502380967, 0)
-svh.Size = UDim2.new(0, 186, 0, 39)
-svh.Font = Enum.Font.Nunito
-svh.Text = "Server Hop"
-svh.TextColor3 = Color3.fromRGB(255, 255, 255)
-svh.TextScaled = true
-svh.TextSize = 30.000
-svh.TextStrokeColor3 = Color3.fromRGB(255, 189, 190)
-svh.TextWrapped = true
+UIGradient.Parent = thing
 
-Close.Name = "Close"
-Close.Parent = MainFrame
-Close.Active = true
-Close.AnchorPoint = Vector2.new(0.5, 0.5)
-Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Close.BackgroundTransparency = 1.000
-Close.Position = UDim2.new(0.928830385, 0, 0.0729885101, 0)
-Close.Selectable = true
-Close.Size = UDim2.new(0.0477269255, 0, 0.0888341665, 0)
-Close.Image = "rbxassetid://3570695787"
-Close.ImageColor3 = Color3.fromRGB(255, 0, 0)
-Close.ScaleType = Enum.ScaleType.Slice
-Close.SliceCenter = Rect.new(100, 100, 100, 100)
-Close.SliceScale = 0.120
+lastupdated1052021.Name = "last updated 10/5/2021"
+lastupdated1052021.Parent = Roundify
+lastupdated1052021.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lastupdated1052021.BackgroundTransparency = 1.000
+lastupdated1052021.Position = UDim2.new(0.670185447, 0, 0.937417388, 0)
+lastupdated1052021.Size = UDim2.new(0.337505043, 0, 0.0625825897, 0)
+lastupdated1052021.Font = Enum.Font.SourceSansSemibold
+lastupdated1052021.Text = "last updated 10/12/2021"
+lastupdated1052021.TextColor3 = Color3.fromRGB(255, 255, 255)
+lastupdated1052021.TextScaled = true
+lastupdated1052021.TextSize = 14.000
+lastupdated1052021.TextWrapped = true
 
-updates.Name = "updates"
-updates.Parent = MainFrame
-updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-updates.BackgroundTransparency = 1.000
-updates.BorderColor3 = Color3.fromRGB(255, 255, 255)
-updates.BorderSizePixel = 0
-updates.Position = UDim2.new(0.767988324, 0, 0.806214511, 0)
-updates.Size = UDim2.new(0, 79, 0, 17)
-updates.ZIndex = 5
-updates.Font = Enum.Font.GothamBlack
-updates.Text = "UPDATES"
-updates.TextScaled = true
-updates.TextSize = 14.000
-updates.TextWrapped = true
+resetkey.Name = "reset key"
+resetkey.Parent = Roundify
+resetkey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+resetkey.BackgroundTransparency = 1.000
+resetkey.Position = UDim2.new(0.0657670796, 0, 0.20609884, 0)
+resetkey.Size = UDim2.new(0, 162, 0, 56)
+resetkey.Font = Enum.Font.GothamBold
+resetkey.Text = "Toggle Reset Key (X)"
+resetkey.TextColor3 = Color3.fromRGB(255, 255, 255)
+resetkey.TextScaled = true
+resetkey.TextSize = 14.000
+resetkey.TextWrapped = true
 
-Roundify_2.Name = "Roundify"
-Roundify_2.Parent = updates
-Roundify_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Roundify_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Roundify_2.BackgroundTransparency = 1.000
-Roundify_2.Position = UDim2.new(0.506570697, 0, 0.497510403, 0)
-Roundify_2.Size = UDim2.new(1.12502944, 14, 0.626599967, 14)
-Roundify_2.Image = "rbxassetid://3570695787"
-Roundify_2.ScaleType = Enum.ScaleType.Slice
-Roundify_2.SliceCenter = Rect.new(100, 100, 100, 100)
-Roundify_2.SliceScale = 0.583
+Serverhop.Name = "Serverhop"
+Serverhop.Parent = Roundify
+Serverhop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Serverhop.BackgroundTransparency = 1.000
+Serverhop.Position = UDim2.new(0.0657670796, 0, 0.495302022, 0)
+Serverhop.Size = UDim2.new(0, 162, 0, 56)
+Serverhop.Font = Enum.Font.GothamBold
+Serverhop.Text = "Serverhop"
+Serverhop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Serverhop.TextScaled = true
+Serverhop.TextSize = 14.000
+Serverhop.TextWrapped = true
 
-updframe.Name = "updframe"
-updframe.Parent = updates
-updframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-updframe.Position = UDim2.new(-3.2405057, 0, -10.5294113, 0)
-updframe.Size = UDim2.new(0, 334, 0, 156)
-updframe.Visible = false
+MAINFRAME.Name = "MAINFRAME"
+MAINFRAME.Parent = themain
+MAINFRAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MAINFRAME.Position = UDim2.new(0.46647954, 0, 0.313967019, 0)
+MAINFRAME.Size = UDim2.new(0.124885641, 180, 0.140786365, 0)
 
-TextLabel.Parent = updframe
-TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BackgroundTransparency = 0.300
-TextLabel.Position = UDim2.new(0.233532935, 0, 0.141025648, 0)
-TextLabel.Size = UDim2.new(0, 197, 0, 34)
+Frame.Parent = MAINFRAME
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame.Draggable = true
+Frame.Position = UDim2.new(0, 105, 0, -1)
+Frame.Size = UDim2.new(0.0500000007, 0, 1, 0)
+
+TextLabel.Parent = MAINFRAME
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 1.29999995, 0)
+TextLabel.Size = UDim2.new(0, 180, 0.0500000007, 0)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Yo! Update 1.1, 9/2/2021."
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Text = ""
 TextLabel.TextSize = 14.000
 
-TextLabel_2.Parent = updframe
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.Position = UDim2.new(0.233532935, 0, 0.532051265, 0)
-TextLabel_2.Size = UDim2.new(0, 209, 0, 57)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "added an fov slider and changed most of the GUI buttons that's all"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-CloseButton_Roundify_12px.Name = "CloseButton_Roundify_12px"
-CloseButton_Roundify_12px.Parent = updframe
-CloseButton_Roundify_12px.Active = true
-CloseButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
-CloseButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseButton_Roundify_12px.BackgroundTransparency = 1.000
-CloseButton_Roundify_12px.Position = UDim2.new(0.928830385, 0, 0.0729885101, 0)
-CloseButton_Roundify_12px.Selectable = true
-CloseButton_Roundify_12px.Size = UDim2.new(0.0477269255, 0, 0.0888341665, 0)
-CloseButton_Roundify_12px.Image = "rbxassetid://3570695787"
-CloseButton_Roundify_12px.ImageColor3 = Color3.fromRGB(255, 0, 0)
-CloseButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
-CloseButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
-CloseButton_Roundify_12px.SliceScale = 0.120
-
-cord.Name = "cord?"
-cord.Parent = MainFrame
-cord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-cord.BackgroundTransparency = 1.000
-cord.BorderColor3 = Color3.fromRGB(255, 255, 255)
-cord.BorderSizePixel = 0
-cord.Position = UDim2.new(0.628825784, 0, 0.806214511, 0)
-cord.Size = UDim2.new(0, 79, 0, 17)
-cord.ZIndex = 5
-cord.Font = Enum.Font.GothamBlack
-cord.Text = "Discord"
-cord.TextScaled = true
-cord.TextSize = 14.000
-cord.TextWrapped = true
-
-Roundify_3.Name = "Roundify"
-Roundify_3.Parent = cord
-Roundify_3.AnchorPoint = Vector2.new(0.5, 0.5)
-Roundify_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Roundify_3.BackgroundTransparency = 1.000
-Roundify_3.Position = UDim2.new(0.506570697, 0, 0.497510403, 0)
-Roundify_3.Size = UDim2.new(1.12502944, 14, 0.626599967, 14)
-Roundify_3.Image = "rbxassetid://3570695787"
-Roundify_3.ScaleType = Enum.ScaleType.Slice
-Roundify_3.SliceCenter = Rect.new(100, 100, 100, 100)
-Roundify_3.SliceScale = 0.583
-
-cordframe.Name = "cordframe"
-cordframe.Parent = cord
-cordframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-cordframe.Position = UDim2.new(-3.2405057, 0, -10.5294113, 0)
-cordframe.Size = UDim2.new(0, 334, 0, 156)
-cordframe.Visible = false
-
-TextLabel_3.Parent = cordframe
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BackgroundTransparency = 0.300
-TextLabel_3.Position = UDim2.new(0.233532935, 0, 0.141025648, 0)
-TextLabel_3.Size = UDim2.new(0, 197, 0, 34)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Discord"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 44.000
-
-TextLabel_4.Parent = cordframe
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.Position = UDim2.new(0.233532935, 0, 0.532051265, 0)
-TextLabel_4.Size = UDim2.new(0, 209, 0, 57)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "will be making a server in the future just hang on for now"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
-CloseButton_Roundify_12px_2.Name = "CloseButton_Roundify_12px"
-CloseButton_Roundify_12px_2.Parent = cordframe
-CloseButton_Roundify_12px_2.Active = true
-CloseButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
-CloseButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseButton_Roundify_12px_2.BackgroundTransparency = 1.000
-CloseButton_Roundify_12px_2.Position = UDim2.new(0.928830385, 0, 0.0729885101, 0)
-CloseButton_Roundify_12px_2.Selectable = true
-CloseButton_Roundify_12px_2.Size = UDim2.new(0.0477269255, 0, 0.0888341665, 0)
-CloseButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
-CloseButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
-CloseButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
-CloseButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
-CloseButton_Roundify_12px_2.SliceScale = 0.120
-
-FOV.Name = "FOV"
-FOV.Parent = MainFrame
-
-FOV_2.Name = "FOV"
-FOV_2.Parent = FOV
-FOV_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-FOV_2.BackgroundTransparency = 0.300
-FOV_2.BorderColor3 = Color3.fromRGB(64, 64, 64)
-FOV_2.BorderSizePixel = 2
-FOV_2.Position = UDim2.new(0.179370746, -50, 0.653922796, -200)
-FOV_2.Size = UDim2.new(0, 182, 0, 58)
-FOV_2.Visible = false
-
 Title.Name = "Title"
-Title.Parent = FOV_2
+Title.Parent = MAINFRAME
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
-Title.Size = UDim2.new(1.00274861, 0, 0.327586293, 0)
-Title.Font = Enum.Font.SourceSans
+Title.Position = UDim2.new(2.43460704e-07, 0, -0.699999988, 0)
+Title.Size = UDim2.new(-0.0179949105, 180, 0.599999547, 0)
+Title.Font = Enum.Font.Roboto
 Title.Text = "FOV Slider"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
 Title.TextWrapped = true
 
-FOVValue.Name = "FOVValue"
-FOVValue.Parent = Title
-FOVValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FOVValue.BackgroundTransparency = 1.000
-FOVValue.Position = UDim2.new(0, 0, 0.520689607, 0)
-FOVValue.Size = UDim2.new(1.03706574, 0, 0.479310155, 0)
-FOVValue.Font = Enum.Font.SourceSans
-FOVValue.Text = "70"
-FOVValue.TextColor3 = Color3.fromRGB(255, 255, 255)
-FOVValue.TextScaled = true
-FOVValue.TextSize = 14.000
-FOVValue.TextWrapped = true
+TextButton.Parent = MAINFRAME
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.699999988, 0, -0.699999988, 0)
+TextButton.Size = UDim2.new(0, 40, 0.600000024, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Reset"
+TextButton.TextSize = 14.000
 
-Slider.Name = "Slider"
-Slider.Parent = FOV_2
-Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Slider.BorderColor3 = Color3.fromRGB(100, 100, 100)
-Slider.Position = UDim2.new(0.0708551109, 0, 0.443103403, 0)
-Slider.Size = UDim2.new(0.841232896, 0, 0.0620688237, 0)
+exit.Name = "exit"
+exit.Parent = ScreenGui
+exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+exit.BackgroundTransparency = 0.600
+exit.BorderSizePixel = 0
+exit.Position = UDim2.new(-0.0842349753, 0, 0.851690233, 0)
+exit.Size = UDim2.new(0, 57, 0, 43)
+exit.Font = Enum.Font.GothamBold
+exit.Text = ""
+exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+exit.TextScaled = true
+exit.TextSize = 14.000
+exit.TextWrapped = true
 
-Knob.Name = "Knob"
-Knob.Parent = Slider
-Knob.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
-Knob.BorderColor3 = Color3.fromRGB(255, 0, 0)
-Knob.Position = UDim2.new(0, -10, 0, -10)
-Knob.Size = UDim2.new(0, 20, 0, 20)
-Knob.Style = Enum.FrameStyle.ChatBlue
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(59, 255, 0)
+open.BackgroundTransparency = 0.600
+open.BorderSizePixel = 0
+open.Position = UDim2.new(-0.0842349753, 0, 0.961012483, 0)
+open.Size = UDim2.new(0, 57, 0, 43)
+open.Font = Enum.Font.GothamBold
+open.Text = ""
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextWrapped = true
 
 -- Scripts:
 
-local function MONPOUP_fake_script() -- RedeemCodeOpen.Script 
-	local script = Instance.new('Script', RedeemCodeOpen)
+local function CHELVPS_fake_script() -- BulletTrails.Script 
+	local script = Instance.new('Script', BulletTrails)
 
-	button = script.Parent
-	frame = script.Parent.Parent.Parent.OpenTSKit.MainFrame
+	local RunService = game:GetService("RunService")
 	
-	button.MouseButton1Click:connect(function()
-		frame.Visible = true
+	RunService.RenderStepped:Connect(function()
+		if game.Players.LocalPlayer.Character.Humanoid then
+			--print("humanoid exists")
+			if game.Players.LocalPlayer.Character.Humanoid:findFirstChild("Bullet") then
+				print("bullet exists")
+				if game.Players.LocalPlayer.Character.Humanoid.Bullet:findFirstChild("Trail") then
+					print("trail exists")
+					if game.Players.LocalPlayer.Character.Humanoid:findFirstChild("Bullet").Name == "BulletDone" then
+						print("bullet done")
+					end
+					if game.Players.LocalPlayer.Character.Humanoid:findFirstChild("Bullet"):findFirstChild("Trail").Lifetime < 0.21 then
+						print("success!")
+						game.Players.LocalPlayer.Character.Humanoid:findFirstChild("Bullet").Trail.Lifetime = 0.21
+						game.Players.LocalPlayer.Character.Humanoid:findFirstChild("Bullet").Trail.Transparency = NumberSequence.new(0)
+						game.Players.LocalPlayer.Character.Humanoid:findFirstChild("Bullet").Trail.Color = ColorSequence.new(Color3.fromRGB(0,255,0),Color3.fromRGB(255,0,0))
+						game.Players.LocalPlayer.Character.Humanoid:findFirstChild("Bullet").Name = "BulletDone"
+					end
+				end
+			end
+		end
 	end)
 	
+	script.Parent.MouseButton1Click:SetCore("SendNotification", {
+		Title = "Ez - legit mode script";
+		Text = "This bullet trail script was NOT made by Ez legit mode. If you own this script please contact jootsu2pro on roblox";
+		Duration = 5;
+	})
 end
-coroutine.wrap(MONPOUP_fake_script)()
-local function NXEYAZ_fake_script() -- OpenTSKit.LocalScript 
-	local script = Instance.new('LocalScript', OpenTSKit)
+coroutine.wrap(CHELVPS_fake_script)()
+local function OTNZ_fake_script() -- thing.rainbow text 
+	local script = Instance.new('Script', thing)
 
-	local Frame = script.Parent.MainFrame
+	local thing = script.Parent
+	local uiGradient = thing:WaitForChild("UIGradient")
+	local tweenService = game:GetService("TweenService")
 	
-	Frame.Draggable = true
-	Frame.Active = true
+	while true do
+		local tween = tweenService:Create(uiGradient, TweenInfo.new(2, Enum.EasingStyle.Linear), {Offset = Vector2.new(-1, 0)})
+		tween:Play()
+		wait(2)
+		uiGradient.Offset = Vector2.new(1, 0)
+		local tween2 = tweenService:Create(uiGradient, TweenInfo.new(2, Enum.EasingStyle.Linear), {Offset = Vector2.new(0, 0)})
+		tween2:Play()
+		wait(2)
+	end
 end
-coroutine.wrap(NXEYAZ_fake_script)()
-local function QDHNM_fake_script() -- Reset.LocalScript 
-	local script = Instance.new('LocalScript', Reset)
+coroutine.wrap(OTNZ_fake_script)()
+local function XAEOCHN_fake_script() -- resetkey.reset 
+	local script = Instance.new('LocalScript', resetkey)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
-		wait(2)
-		print("reset by Kutsukie has loaded")
+		wait(0)
+		print("Loading...")
 		game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
 			if KeyPressed == "x" then
 				game.Players.LocalPlayer.Character.Humanoid.Health = 0
 			end
 		end)
 	end)
+	
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Ez - legit mode script";
+		Text = "Ez has loaded.. Credit to jootsu2pro (creator of the legit mode script)";
+		Duration = 5;
+	})
 end
-coroutine.wrap(QDHNM_fake_script)()
-local function USJSP_fake_script() -- svh.LocalScript 
-	local script = Instance.new('LocalScript', svh)
+coroutine.wrap(XAEOCHN_fake_script)()
+local function NJIOEK_fake_script() -- Serverhop.serverhop 
+	local script = Instance.new('LocalScript', Serverhop)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	
 		game:GetService("TeleportService"):Teleport(455366377, game:GetService("Players").LocalPlayer)
 	end)
+	
+	game.Serverhop.MouseButton1Click:Connect("SendNotification", {
+		Title = "Ez - legit mode script";
+		Text = "Serverhop script has loaded. Credit to jootsu2pro (creator of the legit mode script)";
+		Duration = 5;
+	})
 end
-coroutine.wrap(USJSP_fake_script)()
-local function WRHQ_fake_script() -- Close.Script 
-	local script = Instance.new('Script', Close)
-
-	frame = script.Parent.Parent
-	button = script.Parent
-	
-	button.MouseButton1Click:connect(function()
-		frame.Visible = false
-	end)
-end
-coroutine.wrap(WRHQ_fake_script)()
-local function LBQELJ_fake_script() -- updates.Script 
-	local script = Instance.new('Script', updates)
-
-	button = script.Parent
-	frame = script.Parent.Parent.Parent.OpenTSKit.updframe
-	
-	button.MouseButton1Click:connect(function()
-		frame.Visible = true
-	end)
-	
-end
-coroutine.wrap(LBQELJ_fake_script)()
-local function JUAGZRL_fake_script() -- CloseButton_Roundify_12px.Script 
-	local script = Instance.new('Script', CloseButton_Roundify_12px)
-
-	frame = script.Parent.Parent
-	button = script.Parent
-	
-	button.MouseButton1Click:connect(function()
-		frame.Visible = false
-	end)
-end
-coroutine.wrap(JUAGZRL_fake_script)()
-local function EXZNO_fake_script() -- cord.Script 
-	local script = Instance.new('Script', cord)
-
-	button = script.Parent
-	frame = script.Parent.Parent.Parent.OpenTSKit.cordframe
-	
-	button.MouseButton1Click:connect(function()
-		frame.Visible = true
-	end)
-	
-end
-coroutine.wrap(EXZNO_fake_script)()
-local function KPDCPRF_fake_script() -- CloseButton_Roundify_12px_2.Script 
-	local script = Instance.new('Script', CloseButton_Roundify_12px_2)
-
-	frame = script.Parent.Parent
-	button = script.Parent
-	
-	button.MouseButton1Click:connect(function()
-		frame.Visible = false
-	end)
-end
-coroutine.wrap(KPDCPRF_fake_script)()
-local function WCZZ_fake_script() -- FOV_2.FOVLogic 
-	local script = Instance.new('LocalScript', FOV_2)
+coroutine.wrap(NJIOEK_fake_script)()
+local function GTAWAK_fake_script() -- themain.LocalScript 
+	local script = Instance.new('LocalScript', themain)
 
 	local UIS = game:GetService("UserInputService")
+	local SG = game.StarterGui
+	local PG = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	SG:SetCoreGuiEnabled("All",true)
+	local GUIs = {}
+	local cons = {}
 	
-	wait(1)
-	
-	local P = script.Parent
-	local slider = P.Slider
-	local knob = slider.Knob
-	local FOVLabel = P.FOVValue
-	local knobGrabbed = false
-	
-	local camera = workspace.CurrentCamera
-	
-	function GrabFOVKnob()
-		knobGrabbed = true
-	end
-	
-	function MoveFOVKnob(screenPosition)
-		local yDiff = screenPosition.y - slider.AbsolutePosition.y
-		local knobPositionRatio = math.min(math.max(yDiff / slider.AbsoluteSize.y, 0), 1)
-		
-		local newFOV = 20 + 50 * (1 - knobPositionRatio)
-		camera.FieldOfView = newFOV
-		
-		knob.Position = UDim2.new(0, -10, knobPositionRatio, -10)
-		FOVLabel.Text = math.floor(newFOV)
-	end
-	
-	function ReleaseFOVKnob()
-		knobGrabbed = false
-	end
-	
-	knob.InputBegan:connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
-			GrabFOVKnob()
+	local function Toggle(on)
+		for i,con in pairs(cons) do
+			con:disconnect()
 		end
-	end)
-	
-	UIS.InputChanged:connect(function(input, gameProcessedEvent)
-		if (not gameProcessedEvent and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) and knobGrabbed) then
-			MoveFOVKnob(input.Position)
+		cons = {}
+		if not on  then
+			SG:SetCoreGuiEnabled("All",false)
+			for i,g in pairs(PG:GetChildren()) do
+				if g:IsA("ScreenGui") then
+					GUIs[g] = g.Enabled
+					g.Enabled = false
+					cons[#cons+1] = g.Changed:connect(function()
+						GUIs[g] = g.Enabled
+						g.Enabled = false
+					end)
+				end
+			end
+			cons[#cons+1] = PG.ChildAdded:connect(function(g)
+				if g:IsA("ScreenGui") then
+					GUIs[g] = g.Enabled
+					g.Enabled = false
+					cons[#cons+1] = g.Changed:connect(function()
+						GUIs[g] = g.Enabled
+						g.Enabled = false
+					end)
+				end
+			end)
+		else
+			SG:SetCoreGuiEnabled("All",true)
+			for g,v in pairs(GUIs) do
+				g.Visible = v
+			end
+			GUIs = {}
 		end
-	end)
+	end
 	
-	UIS.InputEnded:connect(function(input, gameProcessedEvent)
-		if (not gameProcessedEvent and input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
-			ReleaseFOVKnob()
+	UIS.InputBegan:connect(function(io)
+		if io.KeyCode == Enum.KeyCode.V then
+			if #cons > 0 then
+				Toggle(true)
+			else 
+				Toggle(false)
+			end
 		end
 	end)
 end
-coroutine.wrap(WCZZ_fake_script)()
+coroutine.wrap(GTAWAK_fake_script)()
+local function INDW_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local OrigOffset = script.Parent.Parent.Size.X.Offset
+	script.Parent.Position = UDim2.new(0,(70/120)*OrigOffset,0,0)
+	
+	game:GetService('RunService').RenderStepped:connect(function()
+		if script.Parent.Position.X.Offset > 0 and script.Parent.Position.X.Offset < OrigOffset+1 then
+			script.Parent.Position = UDim2.new(0,script.Parent.Position.X.Offset,0,0)
+		elseif script.Parent.Position.X.Offset < 1 then
+			script.Parent.Position = UDim2.new(0,1,0,0)
+		else
+			script.Parent.Position = UDim2.new(0,OrigOffset,0,0)
+		end
+		workspace.Camera.FieldOfView = math.floor(120 * (script.Parent.Position.X.Offset/OrigOffset))
+		script.Parent.Parent:WaitForChild('TextLabel').Text = math.floor(120 * (script.Parent.Position.X.Offset/OrigOffset))
+	end)
+	
+end
+coroutine.wrap(INDW_fake_script)()
+local function POLYI_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local frame = script.Parent.Parent.Frame
+	local OrigOffset = script.Parent.Parent.Size.X.Offset
+	script.Parent.MouseButton1Click:connect(function()
+		frame.Position = UDim2.new(0,(70/120)*OrigOffset,0,0)
+	end)
+end
+coroutine.wrap(POLYI_fake_script)()
+local function BXWSPV_fake_script() -- exit.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.themain.Visible = false
+	end)
+	
+end
+coroutine.wrap(BXWSPV_fake_script)()
+local function LTCP_fake_script() -- open.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame.Visible = true
+	end)
+	
+end
+coroutine.wrap(LTCP_fake_script)()
