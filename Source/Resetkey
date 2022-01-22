@@ -1,0 +1,8 @@
+script.Parent.MouseButton1Click:Connect(function()
+
+	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
+		if KeyPressed == "x" then
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		end
+	end)
+end)
